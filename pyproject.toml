@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xkcd-python"
-version = "2.5.0"
+version = "2.6.0"
 description = "A wrapper for xkcd.com's API. Built Using Python."
 authors = ["Sasen Perera <sasen.learnings@gmail.com>"]
 license = "MIT"
