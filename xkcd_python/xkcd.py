@@ -11,10 +11,10 @@ class Client():
         random_comic = request("GET", f"https://xkcd.com/{comic_id}/info.0.json")
         return random_comic.json()
 
-    def get(self, id: int):
+    def get(id: int, self = None):
         comic = request("GET", f"https://xkcd.com/{id}/info.0.json")
         return comic.json()
 
-    def latest_comic(self):
+    def latest_comic(self = None):
         comic = request("Get", f"https://xkcd.com/info.0.json")
         return comic.json
