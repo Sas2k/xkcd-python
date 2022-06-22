@@ -5,7 +5,7 @@ import xkcd_python
 setup(
        # the name must match the folder name 'verysimplemodule'
         name= "xkcd_python", 
-        version= "2.8.0",
+        version= "2.9.0",
         author= xkcd_python.__author__,
         author_email= "sasen.learnings@gmail.com",
         description= xkcd_python.__shot_des__,

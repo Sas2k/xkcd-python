@@ -11,7 +11,7 @@ class xkcd():
         random_comic = request("GET", f"https://xkcd.com/{comic_id}/info.0.json")
         return random_comic.json()
 
-    def get(id: int, self = None):
+    def get(id: int):
         comic = request("GET", f"https://xkcd.com/{id}/info.0.json")
         return comic.json()
 
