@@ -17,4 +17,4 @@ class xkcd():
 
     def latest_comic(self = None):
         comic = request("Get", f"https://xkcd.com/info.0.json")
-        return comic.json
+        return comic.json()
