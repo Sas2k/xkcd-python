@@ -1,7 +1,7 @@
 from requests import *
 from random import *
 
-class Client():
+class xkcd():
     def __init__(self) -> None:
         pass
 
