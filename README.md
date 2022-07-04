@@ -1,10 +1,12 @@
 # xkcd-python
 
+![PYPI Downloads](https://img.shields.io/pypi/dw/xkcd-python?style=for-the-badge)
+
 xkcd-python is an API wrapper for xkcd.com written in python.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install xkcd-python.
 
 ```bash
 pip install -U xkcd-python
