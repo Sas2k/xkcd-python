@@ -1,6 +1,7 @@
 # xkcd-python
 
-![PYPI Downloads](https://img.shields.io/pypi/dw/xkcd-python?style=for-the-badge)
+![PYPI weekly Downloads](https://img.shields.io/pypi/dw/xkcd-python?style=for-the-badge)
+![PYPI monthly Downloads](https://img.shields.io/pypi/dm/xkcd-python?style=for-the-badge)
 
 xkcd-python is an API wrapper for xkcd.com written in python.
 
