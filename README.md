@@ -15,8 +15,10 @@ pip install -U xkcd-python
 
 ## Usage
 
+### Normal usage
+
 ```python
-from xkcd_python import *
+from xkcd_python import Client
 
 #creates the client
 client = Client()
@@ -31,6 +33,21 @@ client.random()
 client.latest_comic()
 ```
 
+### Async usage
+
+```python
+from xkcd_python import Client
+import asyncio
+
+client = Client()
+
+async def main():
+    tasks = (client.get(x) for x in range(1, 20))
+    return await asyncio.gather(*tasks)
+
+asyncio.run(main)
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -38,3 +55,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://github.com/Sas2k/xkcd-python/blob/main/LICENSE)
+
