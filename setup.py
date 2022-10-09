@@ -1,5 +1,9 @@
-from setuptools import setup, find_packages
+import pathlib
+from setuptools import setup
 import xkcd_python
+
+requirements = pathlib.Path("requirements.txt").read_text()
+requirements = requirements.splitlines()
 
 # Setting up
 setup(
@@ -10,8 +14,7 @@ setup(
         author_email= "sasen.learnings@gmail.com",
         description= xkcd_python.__shot_des__,
         long_description= xkcd_python.__description__,
-        packages=find_packages(),
-        install_requires=[],
+        install_requires=requirements,
         
         keywords=['python', "python3"],
         classifiers= [
