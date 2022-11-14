@@ -7,13 +7,13 @@ requirements = requirements.splitlines()
 
 # Setting up
 setup(
-       # the name must match the folder name 'verysimplemodule'
         name= "xkcd_python", 
-        version= "3.2.0",
+        version= "3.3.0",
         author= xkcd_python.__author__,
         author_email= "sasen.learnings@gmail.com",
         description= xkcd_python.__shot_des__,
-        long_description= xkcd_python.__description__,
+        long_description_content_type="text/markdown",
+        long_description= open("README.md", "r", encoding="utf-8").read(),
         install_requires=requirements,
         
         keywords=['python', "python3"],
